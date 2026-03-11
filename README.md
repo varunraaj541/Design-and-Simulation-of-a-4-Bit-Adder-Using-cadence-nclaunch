@@ -77,9 +77,9 @@ module tb_adder_4bit;
                
         // Test cases
         A = 4'b0000; B = 4'b0000; Cin = 0; #10;
-        A = 4'b0011; B = 4'b0101; Cin = 0; #10;
-        A = 4'b1111; B = 4'b0001; Cin = 0; #10;
-        A = 4'b1010; B = 4'b0101; Cin = 1; #10;
+        A = 4'b0100; B = 4'b0101; Cin = 0; #10;
+        A = 4'b1111; B = 4'b1001; Cin = 0; #10;
+        A = 4'b1011; B = 4'b1010; Cin = 1; #10;
         A = 4'b1111; B = 4'b1111; Cin = 1; #10;
 
         $finish;
@@ -97,10 +97,12 @@ endmodule
 
 ### Nclaunch Work Library Window
 
-![Screenshot 2025-05-21 155538](https://github.com/user-attachments/assets/187ebe28-40e2-44b2-9b78-d08bdc67d62c)
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/57468f22-8fdd-4ad2-aa97-513f0368d9ba" />
+
 
 ### Simulation Waveforms
-![Screenshot 2025-05-21 155512](https://github.com/user-attachments/assets/4d1457be-ef30-4b8b-a58d-aa8ac39c078c)
+<img width="1920" height="1200" alt="Screenshot 2025-10-28 144755" src="https://github.com/user-attachments/assets/e9efa59e-4a32-438a-adcc-c7d3ad31ce54" />
+
 
 
 
@@ -108,5 +110,3 @@ endmodule
 Successfully designed the 1-bit Full Adder and 4-bit Adder using Verilog HDL.
 Simulated the design using Cadence nclaunch and verified the output.
 Observed correct addition functionality for all test cases.
-
-
